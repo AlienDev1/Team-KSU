@@ -107,95 +107,6 @@ class BruteForce{
 
 
 
-
-
-
-
-
-	// Method Responsible for adding Dictionary 
-	// Recieves target looks at the lenght and based off of the length 
-	// Determines which Dictionary to use based off of lenght to speed up process. 
-
-
-	public static void readDictionary(String target) {
-
-		byte length = (byte) target.length();
-
-		BufferedReader br = null;
-		try {
-
-			br = new BufferedReader(new FileReader("Dictionary.txt"));
-			String line;
-
-			while((line = br.readLine()) != null) { 
-
-				System.out.println(line);
-				// line is the word we will use to access the library
-				// This will be iterated throughout the different switch statements
-
-				if(target.length() == 1) {
-
-				//	System.out.println("You Found it");
-				}
-				if(target.length() == 2) {
-
-					// Query dicitionary 2
-				}
-				if(target.length() == 3) {
-
-					// Query dicitionary 3
-				}
-				if(target.length() == 4) {
-
-					// Query dicitionary 4
-				}
-				if(target.length() == 5) {
-
-					// Query dicitionary 5
-				}
-				if(target.length() == 6) {
-
-					// Query dicitionary 6
-				}
-				if(target.length() == 7) {
-
-					// Query dicitionary 7
-				}
-				if(target.length() == 8) {
-
-					// Query dicitionary 8
-				}
-				if(target.length() == 9) {
-
-					// Query dicitionary 9
-				}
-			}
-
-		}catch (IOException e) {
-
-			e.printStackTrace();
-		} finally {
-			try {
-				br.close();
-			} catch (IOException e) {
-
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
-	} 
-
-
-
-
-
-
-
-
-
-
-
-
 	// Alphabetical Binary Search Method 
 
 
@@ -329,4 +240,941 @@ class BruteForce{
 		return (day + " day(), " + hour + "h, " + minute + "min, " + second + "s and " + millis + "ms");
 	}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// Method Responsible for adding Dictionary 
+	// Recieves target looks at the lenght and based off of the length 
+	// Determines which Dictionary to use based off of lenght to speed up process. 
+
+
+	public static void readDictionary(String target) {
+
+		byte length = (byte) target.length();
+
+
+				if(target.length() == 2) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "twoLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+
+				}
+				if(target.length() == 3) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "threeLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 4) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "fourLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 5) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "fiveLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 6) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "sixLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 7) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "sevenLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 8) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "eightLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 9) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "nineLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 10) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "tenLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 11) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "elevenLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 12) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "twelveLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 13) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "thirteenLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 14) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "fourteenLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 15) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "fifteenLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 16) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "sixteenLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 17) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "seventeenLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 18) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "eighteenLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 19) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "nineteenLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+
+				if(target.length() == 20) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "twentyLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 21) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "twentyoneLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 22) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "twentytwoLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 23) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "twentythreeLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 24) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "twentyfourLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+
+				if(target.length() == 25) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "twentyfiveLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 26) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "twentysixLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 27) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "twentysevenLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 28) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "twentyeightLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 29) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "twentynineLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 30) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "thirtyLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+				if(target.length() == 31) {
+
+					BufferedReader br = null;
+					try {
+
+						br = new BufferedReader(new FileReader(/**"Dictionary.txt"*/ "thirtyoneLetter.txt"));
+						String line;
+
+						while((line = br.readLine()) != null) { 
+
+							System.out.println(line);
+							// line is the word we will use to access the library
+							// This will be iterated throughout the different switch statements
+
+							// Code to Compare String with Managed Dictionary
+						}
+
+					}catch (IOException e) {
+
+						e.printStackTrace();
+					} finally {
+						try {
+							br.close();
+						} catch (IOException e) {
+
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+
+	} 
 }

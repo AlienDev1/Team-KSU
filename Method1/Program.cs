@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Method1.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,85 +9,70 @@ namespace Method1
 {
     class Program
     {
+        private static Random random = new Random();
+
         static void Main(string[] args)
         {
+            Console.WriteLine("Enter the number of tumblers in the padlock (4 or 5): ");
+            int tumblers = int.Parse(Console.ReadLine());
 
-            //char stop;
-            //bool sent = false;
-            //for (int x = 0; x < 5; x++)
-            //{
-            //    Console.WriteLine($"Randomize Password: {randomString(target)}");
+            Console.WriteLine("Enter the number of letters per tumbler on the padlock (Between 6 - 10): ");
+            int letters = int.Parse(Console.ReadLine());
 
-            //}
-
-            //Console.WriteLine("Would you like to stop:(Y/N) ");
-            //stop = Convert.ToChar(Console.ReadLine());
-
-            //while (!sent)
-            //{
-            //    Console.WriteLine("Enter the password: ");
-            //    target = Console.ReadLine();
-
-            //    Console.WriteLine($"Password: {target}");
-
-            //    for (int x = 0; x < 5; x++)
-            //    {
-            //        Console.WriteLine($"Randomize Password: {randomString(target)}");
-            //    }
-
-            //    Console.WriteLine("Would you like to stop:(Y/N) ");
-            //    stop = Convert.ToChar(Console.ReadLine());
-
-            //    if (stop == 'Y')
-            //    {
-            //        sent = true;
-            //    }
-            //    else
-            //    {
-            //        sent = FALSE;
-            //    }
-            //}
-
-
-
-            string target;
             Console.WriteLine("Enter the password: ");
-            target = Console.ReadLine();
+            string password = Console.ReadLine();
 
-            Console.WriteLine($"Password: {target}");
-            Console.WriteLine($"Randomize Password: {randomString(target)}");
+            char[] pass = password.ToCharArray();
+
+            Console.WriteLine(); //Spacing
+
+            string[,] pad = new string[letters, tumblers];
+
+            PadLock padLock = new PadLock(tumblers, letters, pad);
+            padLock.PopulateLock();
+            padLock.DisplayLock();
+
+            PasswordBreach passwordBreach = new PasswordBreach(pad, letters);
+
+            //passwordBreach.DisplayColumns(letters);
+
+            Console.WriteLine();
 
 
-            Simulation(target);
-            Console.ReadKey();
-
-
-        }
-
-        public static string randomString(string word)
-        {
-            Random r = new Random();
-
-            string random = new string(word.ToCharArray().OrderBy(s => (r.Next(2) % 2) == 0).ToArray());
-
-            return random;
-        }
-
-        public static void Simulation(string password)
-        {
-            password.ToCharArray();
-
-            char[] alphabet = new char[] { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
-
-            foreach (char c in alphabet)
+            for (int begin = 0; begin < 5; begin++)
             {
-                foreach (var item in password)
+                TumblerList(pass,padLock.padlock, letters, begin);
+            }
+
+            Console.ReadKey();
+        }
+
+        public static void TumblerList(char[] splitPassword, string[,] pad, int row, int columnNumber)
+        {
+            string[] tumblerlist = new string[row];
+            for (int x = 0; x < row; x++)
+            {
+                string temp = pad[x, columnNumber];
+                for (int y = 0; y < row; y++)
                 {
-                    if (c.Equals(item))
+                    string temp2 = pad[y, columnNumber];
+                    if (x == y)
                     {
+                        break;
                     }
+
+                    tumblerlist[y] = temp2;
                 }
             }
+
+            Array.Sort(tumblerlist);
+
+
+            for (int i = 0; i < tumblerlist.Length; i++)
+            {
+                Console.Write(tumblerlist[i] + " ");
+            }
+            Console.WriteLine();
         }
     }
 }
